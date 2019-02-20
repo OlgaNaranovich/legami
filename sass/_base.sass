@@ -1,0 +1,65 @@
+// RESET
+*
+	padding: 0
+	margin: 0
+	line-height: 1
+	border: 0
+	font: inherit
+	font-size: 100%
+	vertical-align: baseline
+
+ol, ul
+	list-style: none
+
+\:focus, \:hover
+	outline: none
+
+input[type=search]
+	-webkit-appearance: none
+	-moz-appearance: none
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration
+	-webkit-appearance: none
+	-moz-appearance: none
+
+// GLOBAL SELECTORS'S STILE
+
+html, body
+	height: 100%
+	width: 100%
+	font-size: 10px
+	font-family: 'Montserrat', sans-serif
+	font-weight: 400
+	color: $text-color
+
+body
+	background-color: $bg-color
+	padding-top: 150px
+
+.container
+	max-width: 1400px
+	margin: auto
+
+h1, h2, h3, h4, a, li, .button
+	text-transform: uppercase
+
+a
+	color: $link-color
+	text-decoration: none
+	-webkit-transition: all .3s ease
+	-moz-transition: all .3s ease
+	-ms-transition: all .3s ease
+	-o-transition: all .3s ease
+	transition: all .3s ease
+	&:hover, a:active
+		color: $accent-color
+
+.nav__list
+	display: flex
+	justify-content: space-around
+
+.page
+	padding: 0 15px

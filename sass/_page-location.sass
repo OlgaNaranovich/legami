@@ -1,0 +1,18 @@
+.page-location
+	margin: 10px 0
+	display: flex
+	justify-content: space-between
+	padding-left: 40px
+	font-size: 1.2rem
+
+.breadcrumbs
+	&__list
+		display: flex
+		.area-location
+			font-weight: 500
+			&::after
+				content: '/'
+				margin: 0 5px
+				color: $link-color
+		.current-location
+			font-weight: 300
